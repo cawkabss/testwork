@@ -1,0 +1,15 @@
+@import "../vendor/bootstrap/bootstrap";
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/headings';
+@import 'base/btn';
+@import 'base/starting';
+
+@import 'project/header';
+@import 'project/about';
+@import 'project/works';
+@import 'project/team';
+@import 'project/footer';
+
+@import 'base/response';

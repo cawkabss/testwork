@@ -1,0 +1,33 @@
+.btn{
+  display: inline-block;
+  padding: 10px;
+  line-height: 1;
+  color: $color-invert;
+  border: 1px solid #56585f;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $releway;
+  font-weight: 800;
+  line-height: 1;
+  transition: all .5s;
+
+  &:active{
+    transform: translateY(3px);
+  }
+
+  &:hover{
+    background-color: $color-base;
+  }
+}
+
+.btn-active{
+  border: none;
+  background-color: $red;
+
+  &:hover{
+    background: darken($red, 20%);
+  }
+}
+.btn-fixed{
+  min-width: 130px;
+}

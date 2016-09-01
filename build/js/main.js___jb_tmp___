@@ -1,0 +1,49 @@
+$(document).ready(function () {
+    var $sliderList = $('.slider-list'),
+        sliderView = $('.slider-view').width(),
+        $next = $('.slider-control-next'),
+        $prev = $('.slider-control-prev'),
+        $sliderI = $('.slider-i'),
+        currentSlide = 0,
+        gleft = 0;
+    console.log(sliderView);
+    console.log(sliderView);
+
+    if($(window).width() > 768 && $(window).width() < 992){
+        var space = ((sliderView + 100)/2) - 25;
+        var sliderIWidth = (sliderView - 50)/2 - 100;
+        $sliderI.css('with', sliderIWidth + 'px');
+    }
+
+    if($(window).width() > 992){
+        var space = ((sliderView + 100)/2) - 25;
+        console.log( space );
+    }
+
+    $($next).on('click', function(e){
+
+        if(currentSlide  == $sliderList.children().length -1){
+            return;
+        }
+        currentSlide++;
+
+        $sliderList.find('.active').css('opacity', 0).removeClass('active');
+        console.log($sliderList.children().eq(currentSlide));
+        $sliderList.children().eq(currentSlide).addClass('active');
+        $sliderList.css('margin-left', gleft - space + 'px');
+        gleft -= space;
+
+    });
+    $($prev).on('click', function(e){
+
+        if(currentSlide  == 0){
+            return;
+        }
+        currentSlide--;
+        $sliderList.find('.active').removeClass('active');
+        $sliderList.children().eq(currentSlide).addClass('active').css('opacity', 1);
+        $sliderList.css('margin-left', gleft + space + 'px');
+        gleft += space;
+
+    });
+});

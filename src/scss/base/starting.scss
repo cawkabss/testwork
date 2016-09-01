@@ -1,0 +1,41 @@
+@include font-face("../fonts/", "open-sans", 400);
+@include font-face("../fonts/", "releway", 500);
+@include font-face("../fonts/", "releway", 700);
+@include font-face("../fonts/", "releway", 800);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  font-family: $open-sans;
+  font-size: 14px;
+  color: $color-base;
+}
+a{
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+}
+
+/*---------- CLEARFIX ----------*/
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+/*---------- END CLEARFIX ----------*/

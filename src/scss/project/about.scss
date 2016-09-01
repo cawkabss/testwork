@@ -1,0 +1,44 @@
+.about{}
+
+.about-header{
+  padding: 75px 0 115px;
+}
+
+.about-title{
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 7px;
+    background-image: url('../img/waves.jpg');
+  }
+}
+
+.about-content{}
+
+.about-content-desc{
+  text-align: center;
+  padding: 100px 55px;
+}
+
+.about-content-desc-title{
+  text-transform: uppercase;
+}
+
+.about-content-desc-text{
+  margin-top: 23px;
+  line-height: 26px;
+}
+
+.about-content-img > img{
+  display: block;
+  width: 100%;
+}
