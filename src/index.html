@@ -12,20 +12,22 @@
 <!---------- MAIN SECTION ---------->
 
 <section class="main">
-  <div class="container">
-    <header class="main-header">
+  <header class="main-header">
+    <div class="container">
       <img class="main-header-logo" src="img/header-logo.png">
       <nav class="main-header-nav">
         <a href="#" class="main-header-nav-search-icon"><i class="fa fa-search" aria-hidden="true"></i></a>
         <a href="#" class="main-header-nav-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
       </nav>
-    </header>
-    <div class="main-content">
-      <a href="#" class="main-content-action btn btn-active">inside our studio</a>
-      <h1 class="main-content-title">frostbite</h1>
-      <i class="fa fa-arrow-down main-content-icon" aria-hidden="true"></i>
     </div>
-  </div>
+  </header>
+    <div class="main-content">
+      <div class="container">
+        <a href="#" class="main-content-action btn btn-active">inside our studio</a>
+        <h1 class="main-content-title">frostbite</h1>
+        <i class="fa fa-arrow-down main-content-icon" aria-hidden="true"></i>
+      </div>
+    </div>
 </section>
 
 <!---------- END MAIN SECTION ---------->
@@ -34,20 +36,20 @@
 
 <section class="about">
   <div class="container">
+    <header class="about-header">
+      <h2 class="h2 about-title">
+        a team of creatives<br>
+        based out of california
+      </h2>
+    </header>
     <div class="row">
-      <header class="about-header">
-        <h2 class="h2 about-title">
-          a team of creatives<br>
-          based out of california
-        </h2>
-      </header>
-      <div class="about-content">
-        <div class="col-sm-push-6 col-sm-6">
+      <div class="about-content-list">
+        <div class="col-sm-push-6 col-sm-6 about-content-i">
           <section class="about-content-img">
             <img  src="img/who-we-are.jpg" alt="Who we are">
           </section>
         </div>
-        <div class="col-sm-pull-6 col-sm-6">
+        <div class="col-sm-pull-6 col-sm-6 about-content-i">
           <section class="about-content-desc">
             <h3 class="h3 about-content-desc-title">who we are</h3>
             <p class="about-content-desc-text">
@@ -58,12 +60,12 @@
             </p>
           </section>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 about-content-i">
           <section class="about-content-img">
             <img  src="img/what-we-do.jpg" alt="What we do">
           </section>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 about-content-i">
           <section class="about-content-desc">
             <h3 class="h3 about-content-desc-title">what we do</h3>
             <p class="about-content-desc-text">
@@ -100,48 +102,52 @@
         <a href="#" class="btn btn-fixed">contact</a>
       </li>
     </ul>
-    <div class="slider-view">
-      <a class="slider-control-prev"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-      <a class="slider-control-next"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-      <ul class="slider-list">
-        <li class="slider-i active">
-          <img class="slider-i-img" src="img/slide-1.jpg">
-          <div class="slider-i-text">
-            <h3 class="h3 slider-i-title">case studies 1</h3>
-            <p class="slider-i-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
+    <div class="works-slider row">
+      <i class="fa fa-arrow-left slider-control-prev" aria-hidden="true"></i>
+      <i class="fa fa-arrow-right slider-control-next" aria-hidden="true"></i>
+      <ul class="works-slider-list">
+        <li class="works-slider-i active">
+          <img src="img/slide-1.jpg" class="works-slider-i-img">
+          <div class="works-slider-i-text">
+            <h3 class="h3 works-slider-i-title">case studies 1</h3>
+            <p class="works-slider-i-desk">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
               quis augue iaculis aliquam tristique id sapien. Proin ultricies tortor
               porta, volutpat sapien nec, hendrerit ligula. Ut id ipsum eu leo
               maximus rutrum.
             </p>
           </div>
         </li>
-        <li class="slider-i">
-          <img class="slider-i-img" src="img/slide-2.jpg">
-          <div class="slider-i-text">
-            <h3 class="h3 slider-i-title">case studies 2</h3>
-            <p class="slider-i-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
+        <li class="works-slider-i">
+          <img src="img/slide-2.jpg" class="works-slider-i-img">
+          <div class="works-slider-i-text">
+            <h3 class="h3 works-slider-i-title">case studies 2</h3>
+            <p class="works-slider-i-desk">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
               quis augue iaculis aliquam tristique id sapien. Proin ultricies tortor
               porta, volutpat sapien nec, hendrerit ligula. Ut id ipsum eu leo
               maximus rutrum.
             </p>
           </div>
         </li>
-        <li class="slider-i">
-          <img class="slider-i-img" src="img/slide-1.jpg">
-          <div class="slider-i-text">
-            <h3 class="h3 slider-i-title">case studies 3</h3>
-            <p class="slider-i-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
+        <li class="works-slider-i">
+          <img src="img/slide-1.jpg" class="works-slider-i-img">
+          <div class="works-slider-i-text">
+            <h3 class="h3 works-slider-i-title">case studies 3</h3>
+            <p class="works-slider-i-desk">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
               quis augue iaculis aliquam tristique id sapien. Proin ultricies tortor
               porta, volutpat sapien nec, hendrerit ligula. Ut id ipsum eu leo
               maximus rutrum.
             </p>
           </div>
         </li>
-        <li class="slider-i">
-          <img class="slider-i-img" src="img/slide-2.jpg">
-          <div class="slider-i-text">
-            <h3 class="h3 slider-i-title">case studies 4</h3>
-            <p class="slider-i-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
+        <li class="works-slider-i">
+          <img src="img/slide-2.jpg" class="works-slider-i-img">
+          <div class="works-slider-i-text">
+            <h3 class="h3 works-slider-i-title">case studies 4</h3>
+            <p class="works-slider-i-desk">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio
               quis augue iaculis aliquam tristique id sapien. Proin ultricies tortor
               porta, volutpat sapien nec, hendrerit ligula. Ut id ipsum eu leo
               maximus rutrum.
@@ -159,56 +165,50 @@
 
 <section class="team">
   <div class="container">
-    <div class="row">
       <h2 class="h2 team-title">
         our team
       </h2>
       <ul class="team-list">
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
-            <img class="team-i-img" src="img/team-1.jpg">
-            <div class="team-i-text">
-              <h4 class="team-i-text-name h4">Adam Smith</h4>
-              <p class="team-i-text-position">CEO, Brand director</p>
-              <p class="team-i-text-desc">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec vitae enim sollicitudin,
-                suscipit enim nec, scelerisque erat. </p>
-            </div>
-            <ul class="team-i-social-icon-list cf">
-              <li class="team-i-social-icon-i">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li class="team-i-social-icon-i">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              </li>
-            </ul>
+        <li class="team-i">
+          <img class="team-i-img" src="img/team-1.jpg">
+          <div class="team-i-text">
+            <h4 class="team-i-text-name h4">Adam Smith</h4>
+            <p class="team-i-text-position">CEO, Brand director</p>
+            <p class="team-i-text-desc">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Donec vitae enim sollicitudin,
+              suscipit enim nec, scelerisque erat. </p>
           </div>
+          <ul class="team-i-social-icon-list cf">
+            <li class="team-i-social-icon-i">
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="team-i-social-icon-i">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+          </ul>
         </li>
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
-            <img class="team-i-img" src="img/team-2.jpg">
-            <div class="team-i-text">
-              <h4 class="team-i-text-name h4">Eric Johnson</h4>
-              <p class="team-i-text-position">CEO, Operations director</p>
-              <p class="team-i-text-desc">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec vitae enim sollicitudin,
-                suscipit enim nec, scelerisque erat.
-              </p>
-            </div>
-            <ul class="team-i-social-icon-list cf">
-              <li class="team-i-social-icon-i">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li class="team-i-social-icon-i">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              </li>
-            </ul>
+        <li class="team-i">
+          <img class="team-i-img" src="img/team-2.jpg">
+          <div class="team-i-text">
+            <h4 class="team-i-text-name h4">Eric Johnson</h4>
+            <p class="team-i-text-position">CEO, Operations director</p>
+            <p class="team-i-text-desc">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Donec vitae enim sollicitudin,
+              suscipit enim nec, scelerisque erat.
+            </p>
           </div>
+          <ul class="team-i-social-icon-list cf">
+            <li class="team-i-social-icon-i">
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="team-i-social-icon-i">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+          </ul>
         </li>
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
-            <img class="team-i-img" src="img/team-3.jpg">
-            <div class="team-i-text">
+        <li class="team-i">
+          <img class="team-i-img" src="img/team-3.jpg">
+          <div class="team-i-text">
               <h4 class="team-i-text-name h4">Cecelia Hines</h4>
               <p class="team-i-text-position">photographer</p>
               <p class="team-i-text-desc">Lorem ipsum dolor sit amet, consectetur
@@ -224,10 +224,8 @@
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
         </li>
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
+        <li class="team-i">
             <img class="team-i-img" src="img/team-4.jpg">
             <div class="team-i-text">
               <h4 class="team-i-text-name h4">Ben Ferguson</h4>
@@ -245,10 +243,8 @@
               ><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
         </li>
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
+        <li class="team-i">
             <img class="team-i-img" src="img/team-5.jpg">
             <div class="team-i-text">
               <h4 class="team-i-text-name h4">Judy Davis</h4>
@@ -266,10 +262,8 @@
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
         </li>
-        <li class="col-sm-6 col-md-4">
-          <div class="team-i">
+        <li class="team-i">
             <img class="team-i-img" src="img/team-6.jpg">
             <div class="team-i-text">
               <h4 class="team-i-text-name h4">Thomas Peterson</h4>
@@ -287,10 +281,8 @@
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
         </li>
       </ul>
-    </div>
   </div>
 </section>
 
@@ -301,15 +293,15 @@
 <footer class="main-footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-1 col-md-2">
+      <div class="col-sm-2 col-md-2">
         <div class="main-footer-logo">
           <a href="#">
             <img class="main-footer-logo-img" src="img/footer-logo.png">
           </a>
         </div>
       </div>
-      <div class="col-sm-5 col-md-4">
-        <div class="main-footer-links">
+      <div class="col-xs-6 col-sm-2 col-md-2">
+        <div class="main-footer-links cf">
           <ul class="main-footer-links-list">
             <li class="main-footer-links-i">
               <a href="#">Our Team</a>
@@ -324,6 +316,10 @@
               <a href="#">Blog</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-2 col-md-2">
+        <div class="main-footer-links cf">
           <ul class="main-footer-links-list">
             <li class="main-footer-links-i">
               <a href="#">Exclusive Offers</a>
@@ -340,17 +336,17 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-md-push-2">
+      <div class="col-xs-12 col-sm-6 col-md-5 col-md-push-1">
         <form class="main-footer-form">
           <label>
-            <span>Join Our newsletter</span><br>
+            <span>Join Our newsletter</span>
             Join up and get notified about new products, updates
             and special offers.
             <input type="text" class="main-footer-form-input" placeholder="Enter your email">
           </label>
         </form>
       </div>
-      <div class="col-sm-12 col-md-2 col-md-pull-4">
+      <div class="col-xs-12 col-sm-12 col-md-1 col-md-pull-5">
         <ul class="main-footer-i-social-icon-list cf">
           <li class="main-footer-i-social-icon-i">
             <a class="main-footer-i-social-icon-i-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>

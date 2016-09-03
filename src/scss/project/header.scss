@@ -1,26 +1,40 @@
 .main{
-  text-align: center;
+  position: relative;
+  height: 800px;
   background-image: url(../img/home-bg.png);
   background-size: cover;
   background-position: center;
+
 }
 
 .main-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0;
 
-  height: 10vh;
+  .container{
+    height: 20px;
+  }
 }
 
-.main-header-logo{}
+.main-header-logo{
+  float: left;
+  height: 100%;
+}
 
 .main-header-nav{
-  font-size: 32px;
+  float: right;
+  font-size: 20px;
 
   & a{
+    float: left;
     margin: 0 25px;
     color: $color-base;
+
+    i{
+      display: block;
+    }
 
     &:last-child{
       margin-right: 0;
@@ -34,7 +48,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100%;
+  text-align: center;
 }
 
 .main-content-action{

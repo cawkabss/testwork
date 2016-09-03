@@ -1,11 +1,10 @@
 .team{
-  margin-top: 580px;
-  padding: 55px 0 78px;
+
 }
 
 .team-title{
   position: relative;
-  padding-top: 50px;
+  padding-top: 65px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -18,17 +17,28 @@
     width: 80px;
     height: 7px;
     background-image: url('../img/waves.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
 .team-list{
-  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+
+
 }
 
 .team-i{
-  margin-top: 35px;
-  padding-bottom: 35px;
+  width: 100%;
+  margin-bottom: 120px;
   transition: all .5s;
+
+  &:last-child{
+    margin-bottom: 55px;
+  }
 }
 
 .team-i-img{
@@ -36,40 +46,50 @@
   width: 100%;
 }
 
-.team-i-text{
-  padding: 45px 5px 0;
+img + .team-i-text{
+  margin-top: 2.9em;
 }
+
+p+p{
+  margin-top: 2em;
+}
+
+.team-i-text{}
 
 .team-i-text-name{}
 
 .team-i-text-position{
-  padding-bottom: 27px;
-  text-transform: uppercase;
-}
-
-.team-i-text-desc{
   position: relative;
-  padding-top: 27px;
+  padding-bottom: 60px;
+  text-transform: uppercase;
+  color: #000;
 
-  &:before{
+  &:after{
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 30px;
-    height: 1px;
+    width: 60px;
+    height: 2px;
     background-color: $color-base;
   }
 }
 
+.team-i-text-desc{
+}
+
 .team-i-social-icon-list{
-  font-size: 19px;
+  font-size: 30px;
   margin-top: 30px;
 }
 
 .team-i-social-icon-i{
   float: left;
-  margin: 0 10px;
+  margin-left: 20px;
+
+  &:first-child{
+    margin-left: 0;
+  }
 
   & > a{
     color: $color-base;

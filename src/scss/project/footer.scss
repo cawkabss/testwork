@@ -1,19 +1,25 @@
 .main-footer{
+  padding: 115px 0;
   color: $color-invert;
   background-color: $dark-blue;
 }
 
-.main-footer-logo, .main-footer-links, .main-footer-form, .main-footer-i-social-icon-list{
-  padding: 25px 0;
+.main-footer-links, .main-footer-form, .main-footer-logo{
+  margin-bottom: 120px;
 }
 
-.main-footer-links{
-  display: flex;
-  justify-content: space-between;
+.main-footer-logo{}
+.main-footer-logo-img{
+  height: 100%;
 }
+.main-footer-links{}
 
 .main-footer-links-i{
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 
   & > a{
     transition: all .5s;
@@ -25,29 +31,10 @@
   }
 }
 
-.main-footer-i-social-icon-list{
-  font-size: 19px;
-  text-align: center;
-}
-
-.main-footer-i-social-icon-i{
-  display: inline-block;
-  margin: 0 10px;
-  transition: all .5s;
-
-  &:hover .main-footer-i-social-icon-i-link{
-    color: $red;
-  }
-}
-
-.main-footer-i-social-icon-i-link{
-  color: $color-invert;
-  transition: all .5s;
-}
-
 .main-footer-form{
   span{
     display: block;
+    padding-bottom: 35px;
     text-transform: uppercase;
   }
 }
@@ -61,6 +48,30 @@
   background-color: transparent;
 
   &:focus{
-    outline: 1px solid $red;
+    outline: 1px solid $color-invert;
   }
+}
+
+.main-footer-i-social-icon-list{
+  font-size: 33px;
+}
+
+.main-footer-i-social-icon-i{
+  display: block;
+  float: left;
+  margin-left: 40px;
+  transition: all .5s;
+
+  &:first-child{
+    margin-left: 0;
+  }
+
+  &:hover .main-footer-i-social-icon-i-link{
+    color: $red;
+  }
+}
+
+.main-footer-i-social-icon-i-link{
+  color: $color-invert;
+  transition: all .5s;
 }

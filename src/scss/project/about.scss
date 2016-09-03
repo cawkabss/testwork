@@ -1,12 +1,14 @@
-.about{}
+.about{
+  padding-top: 80px;
+}
 
 .about-header{
-  padding: 75px 0 115px;
+  padding-bottom: 120px;
 }
 
 .about-title{
   position: relative;
-  padding-top: 50px;
+  padding-top: 65px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -15,26 +17,33 @@
     content: '';
     position: absolute;
     top: 0;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 7px;
-    background-image: url('../img/waves.jpg');
+    left: calc(50% - 81px);
+    width: 163px;
+    height: 15px;
+    background-image: url('../img/waves.png');
+    background-size: contain;
   }
 }
 
-.about-content{}
+.about-content-list{}
+.about-content-i{
+  padding: 0;
+}
 
 .about-content-desc{
   text-align: center;
-  padding: 100px 55px;
+  padding: 120px 0;
 }
 
 .about-content-desc-title{
+  width: 100%;
   text-transform: uppercase;
 }
 
 .about-content-desc-text{
-  margin-top: 23px;
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 45px 15px 0 15px;
   line-height: 26px;
 }
 
