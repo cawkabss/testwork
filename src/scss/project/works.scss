@@ -1,5 +1,6 @@
 .works{
   padding-top: 180px;
+  height: 1650px;
   position: relative;
   background: url(../img/works-bg.png) repeat-x;
 }
@@ -42,7 +43,6 @@
 .works-slider{
   position: relative;
   padding: 0 15px 0 15px;
-  height: 1050px;
   overflow: hidden;
 }
 
@@ -61,12 +61,10 @@
 }
 
 .works-slider-list{
-  height: 450px;
   width: 9999999em;
 }
 .works-slider-i{
   float: left;
-  padding-bottom: 90px;
   transition: all 1s;
 
   &.active{
@@ -85,6 +83,7 @@
   transform: scale(0);
     width: 0;
     margin: 0;
+    padding-bottom: 0;
   }
 
 }
@@ -95,13 +94,14 @@
 }
 
 img + .works-slider-i-text{
-  margin: 55px auto 65px;
+  margin: 55px auto 0;
 }
 h3+p{
   margin-top: 30px;
 }
 
 .works-slider-i-text{
+  padding: 0 45px;
   opacity: 0;
   visibility: hidden;
   text-align: center;

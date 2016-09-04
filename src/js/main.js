@@ -20,6 +20,7 @@ $(document).ready(function () {
         slider.$sliderItem = $('.works-slider-i');
         slider.currentSlide = 0;
         slider.$sliderWidth = $('.works-slider').width();
+        console.log($(slider.$sliderItem).first());
         $.each(slider.$sliderItem, function(){
            $(this).removeClass('hidden').removeClass('active').css({
                'width': slider.sliderItemWidth,
@@ -27,7 +28,7 @@ $(document).ready(function () {
            });
         });
         slider.$sliderItem.first().addClass('active');
-        if($(window).width() > 992){
+        if($(window).width() > 980){
             clearInterval(slider.autoPlay);
             slider.sliderItemWidth = slider.$sliderWidth * 0.4 + 'px';
             slider.sliderItemMargin = '0 ' + slider.$sliderWidth * 0.05 + 'px';
@@ -40,9 +41,9 @@ $(document).ready(function () {
             $(slider.$prev).css('display', 'block');
 
         }
-            else if($(window).width() < 992){
+            else if($(window).width() < 980){
             clearInterval(slider.autoPlay);
-            slider.autoPlay = setInterval(slideShowTablet2, 2000);
+            slider.autoPlay = setInterval(slideShowTablet2, 30000);
 
                 slider.sliderItemWidth = slider.$sliderWidth * 0.6 + 'px';
                 slider.sliderItemMargin = '0 ' + slider.$sliderWidth * 0.1 + 'px';
@@ -51,7 +52,7 @@ $(document).ready(function () {
             slider.$prev.css('display', 'none');
 
 
-             if($(window).width() < 768){
+             if($(window).width() < 750){
                 slider.sliderItemWidth = slider.$sliderWidth + 'px';
                 slider.sliderItemMargin = '0 15px 0 0';
 
