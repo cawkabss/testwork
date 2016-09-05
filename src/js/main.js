@@ -44,7 +44,7 @@ $(document).ready(function () {
         }
         else if($(window).width() < 980){
             clearInterval(slider.autoPlay);
-            slider.autoPlay = setInterval(slideShowTablet2, 30000);
+            slider.autoPlay = setInterval(slideShowTablet2, 2000);
             slider.sum = 0;
             slider.sliderItemWidth = slider.$sliderWidth * 0.6 + 'px';
             slider.sliderItemMargin = '0 ' + slider.$sliderWidth * 0.1 + 'px';
