@@ -3,23 +3,6 @@
 }
 
 @media  screen and (min-width: 768px) {
-  .works-slider{
-    min-height: 880px;
-    padding-top: 70px;
-    padding-left: 5% ;
-  }
-
-  .works-slider-i{
-    &.active{
-      transform: scale(1.2);
-    }
-  }
-  .works-slider-i-text{
-    max-width: 475px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: left;
-  }
   .container{
     width: 100%;
   }
@@ -96,15 +79,14 @@
   }
   /*---------- WORKS ----------*/
   .works{
-    height: 1260px;
-    margin-bottom: 60px;
-    padding-top: 120px;
+    padding: 120px 0 0;
   }
   .works-desc{
     max-width: 555px;
     margin: 30px auto 0 auto;
     text-align: center;
   }
+
   .works-actions-list{
     margin: 30px 0 100px;
   }
@@ -118,6 +100,30 @@
     }
   }
 
+  .works-slider{
+    padding-top: 70px;
+    padding-left: 5% ;
+  }
+  .works-slider-list{
+    height: 875px;
+  }
+  .works-slider-i{
+    &.active{
+      transform: scale(1.2);
+    }
+  }
+  .works-slider-i-text{
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+  img + .works-slider-i-text{
+    margin: 80px auto 0;
+  }
+  h3+p{
+    margin-top: 30px;
+  }
   /*---------- END WORKS ----------*/
 
   /*---------- TEAM ----------*/
@@ -250,10 +256,11 @@
 
   /*---------- END ABOUT ----------*/
   .works{
-    height: 1160px;
     padding-top: 125px;
   }
-
+  .works-slider-list{
+    height: 755px;
+  }
   img + .works-slider-i-text{
     margin: 55px 0 65px;
   }
